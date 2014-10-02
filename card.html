@@ -8,12 +8,12 @@ p {color: white; font-size: 50; top: 80; left: 80; font-family: Helvetica}
 <body>
 <canvas id="a" width=647 height=400></canvas>
 <p>Li Xuanji</p>
-<p style="font-size: 20; top: 170">www.xuanji.li</p>
+<p style="font-size: 20; top: 170">xuanji@gmail.com
+<p style="font-size: 16; top: 200"> www.xuanji.li</p>
 <pre id="b"></pre>
 <script>
 var w = document,
-    g = 'getElementById',
-    v = w[g]('a').getContext('2d');
+    v = a.getContext('2d');
 
 function d(x,y,g) {
     v.globalAlpha = g;
@@ -28,8 +28,8 @@ for (i=0;i<647;i++)
     for (j=0;j<400;j++)
         d(i,j,m(23,0,0,i/300-2,j/300-1.2)/23);
 d(0,0,0.5);
-v.fillText("flip to view source", 545, 390);
-w[g]("b").textContent = w[g]("h").outerHTML.replace(/\n/g,' ');
+v.fillText("flip to view source", 535, 370);
+b.textContent = h.outerHTML.replace(/\n/g,' ');
 </script>
 <a href="https://github.com/zodiac/card.js"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 </body>
